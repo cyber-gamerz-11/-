@@ -264,6 +264,101 @@
     .certs-grid { grid-template-columns:1fr; }
     .about-stats { grid-template-columns:1fr 1fr; }
   }
+
+  /* ===== MOBILE OPTIMIZATION FIX (ADD ONLY, DON'T EDIT ABOVE) ===== */
+
+@media (max-width: 768px) {
+
+  body {
+    cursor: auto;
+  }
+
+  .cursor, .cursor-ring {
+    display: none;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  #hero {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .hero-sub {
+    font-size: 0.9rem;
+    margin: 1rem auto;
+  }
+
+  .hero-roles {
+    justify-content: center;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scroll-hint {
+    display: none;
+  }
+
+  section {
+    padding: 4rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-list {
+    gap: 1rem;
+  }
+
+  .project-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-big {
+    font-size: 3rem;
+  }
+
+  .contact-desc {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
 </style>
 </head>
 <body>
@@ -354,10 +449,10 @@
           <div><span class="t-prompt">❯</span> cat profile.json</div>
           <!-- CHANGE: the orange text after each colon is what shows in the terminal -->
           <div><span class="t-key">"name"</span>: <span class="t-val">"Rifaqat"</span>,</div>
-          <div><span class="t-key">"dob"</span>: <span class="t-val">"November 11, 2011"</span>,</div>
+          <div><span class="t-key">"B.day"</span>: <span class="t-val">"November 11, 2011"</span>,</div>
           <div><span class="t-key">"location"</span>: <span class="t-val">"Dhaka, Bangladesh"</span>,</div>
-          <div><span class="t-key">"school"</span>: <span class="t-val">"Mohammadpur Prep (Boys)"</span>,</div>
-          <div><span class="t-key">"hobbies"</span>: <span class="t-val">["coding","hacking","photography"]</span>,</div>
+          <div><span class="t-key">"school"</span>: <span class="t-val">"MPSC (Boys)"</span>,</div>
+          <div><span class="t-key">"hobbies"</span>: <span class="t-val">"coding,hacking,photography"</span>,</div>
           <div><span class="t-key">"status"</span>: <span class="t-val">"building things that matter"</span> <span class="t-cursor"></span></div>
         </div>
       </div>
